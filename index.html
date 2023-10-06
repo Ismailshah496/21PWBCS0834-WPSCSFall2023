@@ -1,1 +1,48 @@
-# 21PWBCS0834-WPSCSFall2023
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+ </head>
+ <body>
+    <h1>
+        Register Now!
+    </h1>
+    <form action="/submit" method="post"> 
+        <label for="name "><b> Full Name:</label></b><br>
+        <Input type="text" id="name" name="name" placeholder="Full Name" required></Input><br>
+       <b> <label for="email" >Email:</label></b> <br>
+       <input type="email" id="email" name="email" placeholder="Email" required><br>
+     <b>   <label for="phone"> Phone Number:</label><br></b>
+       <input type="tel" id="phone" name="phone" placeholder="Phone Number" required><br><br>
+<b> <label for="dob">Date of Birth:</label></b><br>
+<input type="date" id="dob" name="dob" required><br><br>
+ <b> <label for="gender">Gender:</label></b><br>
+<input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio"  name="gender" id="female" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other"> other</label><br>
+<b><label for="courses">Select Courses:</label></b><br>
+<select name="courses" id="courses">
+    <option value="sotware engneering "> oftware Engneering </option>
+    <option value="Data Structure "> Data Structure </option>
+    <option value="Calculas">Calculas</option>
+    <option value="compiler Construction"></option><br>
+    
+
+</select><br><br>
+<label for="resume ">Upload resume: </label><br>
+<input type="file" id="resume" name="resume"><br><br>
+<label for="comments"> Comments:</label><br>
+<textarea name="comments" id="comments" cols="30" rows="4"></textarea><br><br>
+<label for="subscribe">Subscribe</label>
+<input type="checkbox" id="subscribe" name="subscribe" value="yes"><br><br>
+<button type="submit" name="submit" id="submitButton">Submit</button>
+
+</form> 
+    </form>
+ </body>
+ </html>
