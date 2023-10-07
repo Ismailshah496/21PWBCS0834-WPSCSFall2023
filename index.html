@@ -1,48 +1,163 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admission Form</title>
- </head>
- <body>
-    <h1>
-        Register Now!
-    </h1>
-    <form action="/submit" method="post"> 
-        <label for="name "><b> Full Name:</label></b><br>
-        <Input type="text" id="name" name="name" placeholder="Full Name" required></Input><br>
-       <b> <label for="email" >Email:</label></b> <br>
-       <input type="email" id="email" name="email" placeholder="Email" required><br>
-     <b>   <label for="phone"> Phone Number:</label><br></b>
-       <input type="tel" id="phone" name="phone" placeholder="Phone Number" required><br><br>
-<b> <label for="dob">Date of Birth:</label></b><br>
-<input type="date" id="dob" name="dob" required><br><br>
- <b> <label for="gender">Gender:</label></b><br>
-<input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label><br>
-        <input type="radio"  name="gender" id="female" value="female">
-        <label for="female">Female</label><br>
-        <input type="radio" id="other" name="gender" value="other">
-        <label for="other"> other</label><br>
-<b><label for="courses">Select Courses:</label></b><br>
-<select name="courses" id="courses">
-    <option value="sotware engneering "> oftware Engneering </option>
-    <option value="Data Structure "> Data Structure </option>
-    <option value="Calculas">Calculas</option>
-    <option value="compiler Construction"></option><br>
+    <title>My Site</title>
+    <style>
+        /* Global styles that apply to all screen sizes */
+        body {
+            background-image: url(images/backg.jpg);
+            color: black;
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            text-align: center;
+            background-color: rgb(202, 194, 194);
+            color: white;
+        }
+
+        nav a {
+            font-size: 20px;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            border: 1px dotted black;
+            border-radius: 50%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            img {
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            nav a {
+                font-size: 16px;
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact Us</a>
+        <hr>
+    </nav>
+
+    <section id="home">
+        <body style="background-image: url(images/backg.jpg); color:black;"> 
+   
+
+    <section id="about">
+        <b><b></b><i> <h2 style="text-align: center; font-size:50px;" >WELCOME TO MY PORTFOLIO!</h2> </i> </b> </b>
+     <h2 style="text-align: center;"> Hello! I am Muhammad Ismail Shah BS<br> Computer Science  Students at <br> Uet Peshawar</h2>
+     <img src="images/ismail.jpg" alt="picture" width="450" height="450"> 
+    <p style="font-size: 20px;">Born on 10 Aug 2003, to a Storyani(Pashtun) family  in Dera ismail Khan,He is married on 22 sep 2023 with his cousin,His father is a buisnessman, He is a dedicated student currently  pursuing  a Bachelor of Science in Computer Science at the University of Engineering and Technology (UET) Peshawar. He hails from Dera Ismail Khan, where he completed his   intermediate and matriculation education, indicating a strong foundation in academics.</p>
+     <P style="font-size: 20px;">Furthermore, Ismail Shah's dedication to his education is indicative of a strong work ethic and commitment to achieving his academic and career goals. Being enrolled in a reputable institution like UET Peshawar also suggests that he is exposed to quality education and resources that can help him excel in his studies.
+
+     </P>
+    </section>
+
+    <section id="resume">
+        
+            <h1>Resume</h1>
+            <ul>
+                <li>
+                    <h2>Education Details</h2>
+                    <p style="font-size: 20px;">
+                        Bachelor of Science in Computer Science<br>
+                        University of Engineering and Technology (UET) Peshawar<br>
+                        Expected Graduation: [November, 2025]
+                    </p>
+                    <p><b>Intermediate (Pre-Engineering)</b></p>
+                    <ul style="font-size: 20px;">
+                        <li>Leeds School and College</li>
+                        <li>Dera ismail khan</li>
+                        <li>Year of Completion: 2021</li>
+                    </ul>
+                    <p><b>Matriculation (Science)</b></p>
+                    <ul style="font-size: 20px;">
+                        <li>Wensam School and College</li>
+                        <li>Dera Ismail Khan</li>
+                        <li>Year of Completion: 2019</li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Skills:</h2>
+                    <ul style="font-size: 20px;">
+                        <li>Programming Languages: C++, Python, Java</li>
+                        <li>Data Structures and Algorithms</li>
+                        <li>Software Development</li>
+                        <li>Problem-Solving and Critical Thinking</li>
+                        <li>Database Management</li>
+                        <li>Web Development (HTML, CSS, JavaScript)</li>
+                        <li>Version Control (Git)</li>
+                        <li>Strong Analytical and Communication Skills</li>
+                        <li>Team Collaboration</li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Internships:</h2>
+                    <p style="font-size: 20px;">
+                        <b>Netsol Limited</b><br>
+                        Islamabad<br>
+                        July 2023 - September 2023
+                    </p>
+                    <p style="font-size: 20px;">
+                        "I am currently employed at Netsole Limited, a dynamic software company known for its innovative solutions and commitment to excellence. In my role here, I have the privilege of contributing to cutting-edge software development projects and collaborating with a team of talented professionals. Working at Netsole Limited has not only broadened my technical skills but has also provided me with valuable insights into the ever-evolving world of software development. I am excited to be a part of this forward-thinking organization and look forward to making meaningful contributions to our ongoing projects."
+                    </p>
+                </li>
+                <li>
+                    <h2>Certification:</h2>
+                    <p ><a href="certiiii.pdf" download>Download(PDF)</a></p>
+                </li>
+            </ul>
+    </section>
+
+    <section id="portfolio">
+        <h1 style="font-size: 40;">Portfolio Section:</h1>
+        <h2 style="font-size:40px ; text-align: center;">Amazon Virtual Assistant</h2>
+        <p style="font-size: 20px; text-align: center;">Looking for someone with expertise and professionalism to be your Expert Amazon FBA Virtual Assistant? <br>
     
+          You are probing for a amazon fba virtual assistant who manages all your work then you are at the right place, <br>I am an Amazon expert and have experience of many successful launches.I’m here to help  you to grow <br>your business on Amazon.I will manage Amazon seller central account do have the experience.I now have  <br>a Personal team of  professionals at my disposal at all times that i manage.</p>
+        <img src="amazon.JPG" alt="image" style="margin-left: 450px;" width="500" height="500">
+        <h1 style="font-size: 30px; text-align: center;">Development project</h1>
+        <p style="font-size: 20px; text-align: center;">As a web developer, I am currently working on an exciting e-commerce website <br> project. I'm focused on creating a user-friendly experience with a robust product catalog, secure <br> payment processing, and seamless navigation. It's a rewarding challenge to build a platform that  <br>connects customers with products they love. I'm committed to delivering a high-quality <br> and visually appealing e-commerce solution that meets both business and user needs.</p>
+        <img src="images/dev.JPG" alt="image" style="margin-left: 450px;" width="500" height="500">
+    </section>
 
-</select><br><br>
-<label for="resume ">Upload resume: </label><br>
-<input type="file" id="resume" name="resume"><br><br>
-<label for="comments"> Comments:</label><br>
-<textarea name="comments" id="comments" cols="30" rows="4"></textarea><br><br>
-<label for="subscribe">Subscribe</label>
-<input type="checkbox" id="subscribe" name="subscribe" value="yes"><br><br>
-<button type="submit" name="submit" id="submitButton">Submit</button>
+    <section id="contact" style="text-align: center;">
+        <h1 style="font-size:60; text-align: center;">contact Us</h1>
+        <input type="text" name="Name" placeholder="Full Name" style="text-align: center;"> <br>
+        <input type=" email" name="email" placeholder="email" style="text-align: center;"><br>
+        <input type=" tel" name="phone num" placeholder="Phone Number"style="text-align: center;"><br>
+        <label >Send Message</label><br>
+        <textarea name="textarea" id="" cols="30" rows="3"></textarea>
+        <h2 style="text-align: center;">contact:03170322545</h2>
+     
+        <h2 style="text-align: center;"> <a href="https://github.com/Ismailshah496/21PWBCS0834-WPSCSFall2023"> Github</a></h2>
+    
+    </section>
 
-</form> 
-    </form>
- </body>
- </html>
+    <footer>
+        <p>@Muhammad Ismail Shah 2023</p>
+    </footer>
+</section>
+</body>
+</html>
